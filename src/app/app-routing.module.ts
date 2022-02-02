@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { AppComponent } from './app.component';
 
-const routes: Routes = [];
+const routes: Routes = [{path:'app-paymentpage', component:PaymentpageComponent}];
 
 @NgModule({
-  imports: [CommonModule,ReactiveFormsModule,RouterModule.forRoot(routes)],
+  declarations: [PaymentpageComponent],
+  imports: [FormsModule,CommonModule,ReactiveFormsModule,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

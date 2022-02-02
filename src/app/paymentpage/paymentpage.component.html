@@ -1,0 +1,7 @@
+<ul style="background-color:#F5F5F5">
+    <li><label>Weight of the parcel in kgs <input type="number" [(ngModel)]="weightofParcel"  name="weight"></label> </li>
+    <li><label>Price per Kg <input class="disbaledInput"type="number" value={{priceperkg}}  name="price" readonly></label> </li>
+    <li><label>Amount to be paid: Rs. {{weightofParcel*priceperkg}}</label></li>
+    <li><input type="button" value="Pay on Delivery"></li>
+</ul>
+			
